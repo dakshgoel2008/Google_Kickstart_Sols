@@ -1,0 +1,11 @@
+# Compiled executables
+A
+B
+C
+D
+*.out
+
+# Local test files
+input.txt
+output.txt
+Error.txt
