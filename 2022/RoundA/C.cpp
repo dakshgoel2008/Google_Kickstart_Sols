@@ -21,26 +21,11 @@ const ll mod = 1e9 + 7;
 #define pb push_back
 
 void solve() {
-    string s;cin>>s;
-    int sum=0;
-    for(auto i:s)sum+=(i-'0');
-    if(sum%9==0) {
-        s.insert(1,1,'0');
-        cout<<s<<endl;
-        return;
-    }
-    int rem=(9 - sum%9 + 9)%9;
-    string ans="";
-    bool hai=true;
-    for(int i=0;i<s.size();++i){
-        if(hai&&s[i]-'0' > rem) {
-            ans+=(rem+'0');
-            hai=false;
-        }
-        ans+=s[i];
-    }
-    if(hai)ans+=(rem+'0');
-    cout<<ans<<endl;
+    ll n; cin >> n;
+    vector<ll> a(n);
+    fr(i, n) cin >> a[i];
+
+
 }
 
 int main() {
@@ -58,6 +43,7 @@ int main() {
     for (int tc = 1; tc <= t; tc++) {
         cout << "Case #" << tc << ": ";
         solve();
+        cout << '\n';
     }
 
     return 0;
